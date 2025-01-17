@@ -5,14 +5,13 @@
 ## 项目信息
 
 - **项目名称**：rest-framework-djongo
-- **版本**：0.1.2
+- **版本**：0.1.3
 - **作者**：vfeng <1914007838@qq.com>
 - **Python 版本要求**：>=3.9
 
 ## 功能概述
 
 ### 序列化器
-- **GenericDjongoSerializer**：为 `GenericDjongoModel` 提供序列化功能，映射了多种 Django 模型字段到 Django REST Framework 的字段。
 - **EmbeddedSerializer**：用于处理嵌入式数据的序列化，继承自 `GenericDjongoSerializer`，并跳过了一些验证器。
 
 ### 字段
@@ -26,8 +25,7 @@
 
 该项目使用 Poetry 进行依赖管理，确保你已经安装了 Poetry（https://python-poetry.org/docs/#installation）。
 
-克隆项目到本地：
-
+开始使用：
 ```bash
-git clone <项目仓库地址>
-cd rest-framework-djongo
+  pip install rest-framework-djongo
+```

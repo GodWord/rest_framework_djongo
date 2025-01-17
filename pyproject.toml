@@ -1,9 +1,17 @@
 [project]
 name = "rest-framework-djongo"
-version = "0.1.2"
-description = ""
+version = "0.1.3"
+description = "It is used django + mongodb + djongo + djangorestframework"
 authors = [
-    {name = "vfeng",email = "1914007838@qq.com"}
+    { name = "vfeng", email = "1914007838@qq.com" }
+]
+keywords = [
+    "django",
+    "djongo",
+    "mongodb",
+    "pymongo",
+    "restframework",
+    "rest-framework-djongo",
 ]
 readme = "README.md"
 requires-python = ">=3.9"
@@ -13,7 +21,8 @@ dependencies = [
     "djongo (==1.3.6)",
     "pymongo (>=4.10.1,<5.0.0)",
 ]
-
+[project.urls]
+Homepage = "https://github.com/GodWord/rest_framework_djongo"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
