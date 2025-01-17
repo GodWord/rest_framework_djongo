@@ -1,0 +1,19 @@
+[project]
+name = "rest-framework-djongo"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "周继风",email = "1914007838@qq.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bson (>=0.5.10,<0.6.0)",
+    "djangorestframework (>=3.14.0,<4.0.0)",
+    "django (>=4.1.13,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
