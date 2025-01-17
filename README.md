@@ -22,10 +22,6 @@
 - **GenericAPIView**：继承自 `drf_generics.GenericAPIView`，提供了 `get_object` 方法用于获取对象。
 
 ## 安装
-
-该项目使用 Poetry 进行依赖管理，确保你已经安装了 Poetry（https://python-poetry.org/docs/#installation）。
-
-开始使用：
 ```bash
   pip install rest-framework-djongo
 ```
