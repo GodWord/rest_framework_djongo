@@ -3,7 +3,7 @@ from rest_framework import generics as drf_generics
 from rest_framework.generics import get_object_or_404
 
 
-class GenericAPIView(drf_generics.GenericAPIView):
+class DjongoSearchMixin:
     lookup_field = 'pk'
     lookup_field_class = ObjectId
 

@@ -5,7 +5,7 @@
 ## 项目信息
 
 - **项目名称**：rest-framework-djongo
-- **版本**：0.1.3
+- **版本**：0.1.4
 - **作者**：vfeng <1914007838@qq.com>
 - **Python 版本要求**：>=3.9
 
@@ -19,7 +19,7 @@
 - **EmbeddedField**：处理嵌入式字段，也提供了 `to_internal_value` 和 `to_representation` 方法。
 
 ### 视图
-- **GenericAPIView**：继承自 `drf_generics.GenericAPIView`，提供了 `get_object` 方法用于获取对象。
+- **DjongoSearchMixin**：重写 `get_object` 方法。
 
 ## 安装
 ```bash
