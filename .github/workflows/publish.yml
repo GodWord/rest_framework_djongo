@@ -1,0 +1,44 @@
+name: Publish Python Package to PyPI
+
+# 当推送标签到仓库时触发工作流
+on:
+  push:
+    tags:
+      - 'v*'  # 标签格式为 vX.Y.Z
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # 根据你的 pyproject.toml 要求设置 Python 版本
+
+      # 安装 Poetry
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+
+      # 安装项目依赖
+      - name: Install dependencies
+        run: poetry install
+
+      # 构建项目
+      - name: Build package
+        run: poetry build
+
+      # 发布到 PyPI
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
