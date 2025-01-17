@@ -3,7 +3,7 @@ name = "rest-framework-djongo"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "周继风",email = "1914007838@qq.com"}
+    {name = "vfeng",email = "1914007838@qq.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"
